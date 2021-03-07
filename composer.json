@@ -1,0 +1,36 @@
+{
+    "name": "digraphcms/digraph-project",
+    "description": "Composer project for building Digraph sites in the recommended fashion. Get started with \"composer create-project byjoby/digraph-project\"",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joby Elliott",
+            "email": "digraph@byjoby.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "digraphcms/digraph-project-core": "~2",
+        "oomphinc/composer-installers-extender": "^1.1|^2"
+    },
+    "extra": {
+        "installer-types": [
+            "digraph-module"
+        ],
+        "installer-paths": {
+            "vendor/digraphcms/modules/{$name}/": [
+                "type:digraph-module"
+            ]
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "DigraphProject\\ScriptHandler::installHandler"
+        ],
+        "post-update-cmd": [
+            "DigraphProject\\ScriptHandler::updateHandler"
+        ]
+    }
+}
