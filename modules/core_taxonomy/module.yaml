@@ -1,0 +1,3 @@
+types:
+  content:
+    taxonomy-tag: ${module.namespace}\TaxonomyTag

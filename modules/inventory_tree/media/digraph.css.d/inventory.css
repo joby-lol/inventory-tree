@@ -1,0 +1,34 @@
+.inventory-files-header {
+    clear: both;
+}
+
+.inventory-files-list {
+    columns: 2;
+}
+
+.inventory-label-sheet {
+    column-count: 2;
+    column-gap: 0;
+    font-size: 16pt;
+}
+.inventory-label {
+    display: flex;
+    outline: 1px solid #ccc;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1.5in;
+    width: 4in;
+
+    .inventory-label-qr {
+        img {
+            width: 1in;
+        }
+    }
+    .inventory-label-text {
+        font-family: monospace;
+    }
+    .inventory-label-color {
+        width: 1in;
+        height: 1in;
+    }
+}

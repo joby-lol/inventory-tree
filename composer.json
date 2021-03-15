@@ -1,6 +1,6 @@
 {
-    "name": "digraphcms/digraph-project",
-    "description": "Composer project for building Digraph sites in the recommended fashion. Get started with \"composer create-project byjoby/digraph-project\"",
+    "name": "byjoby/inventory-tree",
+    "description": "A PHP web app for tracking inventory as an abstract tree of things that contain other things.",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -13,7 +13,9 @@
     "prefer-stable": true,
     "require": {
         "digraphcms/digraph-project-core": "~2",
-        "oomphinc/composer-installers-extender": "^1.1|^2"
+        "oomphinc/composer-installers-extender": "^1.1|^2",
+        "digraphcms/digraph-search": "dev-main",
+        "bacon/bacon-qr-code": "^2.0"
     },
     "extra": {
         "installer-types": [

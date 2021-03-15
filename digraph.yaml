@@ -2,7 +2,7 @@
 package:
   defaults:
     fields:
-      site_name: New Digraph site
+      site_name: Inventory tree
 
 # Specify a time zone if you want to override your server's default
 # timezone: America/Denver

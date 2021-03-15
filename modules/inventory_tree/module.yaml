@@ -1,0 +1,18 @@
+types:
+  content:
+    inventory-entry: ${module.namespace}\InventoryEntry
+
+helpers:
+  classes:
+    inventory: ${module.namespace}\InventoryHelper
+
+factory_columns:
+  content:
+    inv_category:
+      name: inv_category
+      type: VARCHAR(250)
+      index: BTREE
+    inv_status:
+      name: inv_category
+      type: VARCHAR(250)
+      index: BTREE
